@@ -1,0 +1,21 @@
+<h1>Modification d'un fantôme</h1>
+
+    <fieldset>
+        <legend>Modifier un fantôme</legend>
+
+        <form method="get" action="updateFantome.php">
+            <div class="form">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" value="{{fantome.nom}}" class="form-control"
+                           id="nom" placeholder="Nom">
+                </div>
+                <div class="form-group">
+                    <label for="couleur">Prénom</label>
+                    <input type="text" name="couleur" value="{{fantome.couleur}}" class="form-control"
+                           id="couleur" placeholder="Couleur">
+                </div>
+            </div>
+           
+            <button type="submit" class="btn  btn-success" name="ajouter" value="valide">Ajouter</button>
+        </form>
